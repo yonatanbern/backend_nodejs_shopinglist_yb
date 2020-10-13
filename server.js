@@ -99,7 +99,7 @@ app.put('/items/updatedetail', (req, res) => {
   var itemIdx = getItemIndexById(id);
   if (itemIdx >= 0) {
     listOfItems[itemIdx].description = new_desc;
-    res.send("Item's description Updated succesfully!");
+    res.send(listOfItems);
   } else {
     res.send("Item NOT found, please check your request id...");
   }
