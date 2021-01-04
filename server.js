@@ -30,17 +30,6 @@ app.set('view engine', 'ejs');
 //DB Variable - contains all of the items
 var listOfItems = [];
 
-
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/indexx.html');
-});
-
-
-app.get('/about', (req, res) => {
-  console.log("start listening on about");
-  res.sendFile(__dirname + '/about.html');
-});
-
 //func for find item's index in the db variable
 function getItemIndexById(id) {
   var i;
